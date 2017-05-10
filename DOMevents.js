@@ -20,5 +20,6 @@ donate.addEventListener('click', function(event) {
 	}
 	console.log(donator);
 	Donors.addDonor(donator);
+	Donors.showDonor(donator);
 	console.log(Donors);
 })

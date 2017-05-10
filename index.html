@@ -2,36 +2,51 @@
 <html>
 <head>
 	<title>Walk-A-Thon</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<form>
-		<fieldset>
-			<input type="text" name="name" id="name" placeholder="Full Name">
-		</fieldset>
+	<div class="container">
+		<form class="form-horizontal">
+			<fieldset>
+				<input type="text" class="form-control" name="name" id="name" placeholder="Full Name">
+			</fieldset>
 
-		<fieldset>
-			<label for="email">Email:</label>
-			<input type="email" name="email" id="email" placeholder="horse@hole.com">
-		</fieldset>
+			<fieldset>
+				<label for="email" class="control-label">Email:</label>
+				<input type="email" class="form-control" name="email" id="email" placeholder="horse@hole.com">
+			</fieldset>
 
-		<fieldset>
-			<label for="donaton">$</label>
-			<input type="number" name="donation" id="donation" placeholder="Donation Amount">
-		</fieldset>
+			<fieldset>
+				<label for="donaton" class="control-label">$</label>
+				<input type="number" class="form-control" name="donation" id="donation" placeholder="Donation Amount">
+			</fieldset>
 
-		<fieldset>
-			<input type="radio" name="donationType" id="lump">
-			<label for="lump">Lump Sum</label>
+			<fieldset>
+				<input type="radio" class="form-inline" name="donationType" id="lump">
+				<label for="lump" class="control-label">Lump Sum</label>
 
-			<input type="radio" name="donationType" id="per">
-			<label for="per">Per Lap</label>
-		</fieldset>
+				<input type="radio" class="form-inline" name="donationType" id="per">
+				<label for="per" class="control-label">Per Lap</label>
+			</fieldset>
 
-		<button type="button" id="donate">Donate</button>
-		<button type="reset" id="reset">Clear</button>
-	</form>
+			<button type="button" class="btn btn-primary" id="donate">Donate</button>
+			<button type="reset" class="btn btn-secondary" id="reset">Clear</button>
+		</form>
 
-	<table id="donors"></table>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Donation Amount</th>
+					<th>Donation Type</th>
+				</tr>
+			</thead>
+
+			<tbody id="donors"></tbody>
+		</table>
+	</div>
 
 <script type="text/javascript" src="iffe-walkathon.js"></script>
 <script type="text/javascript" src="DOMevents.js"></script>
