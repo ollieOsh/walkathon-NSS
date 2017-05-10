@@ -15,9 +15,3 @@ input[type='radio']:nth-child(3) {
 	margin-left: 10px;
 	background-color: red;
 }
-
-/*@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) and (orientation: landscape) {
-	.col-md-4 {
-		.col-sm-4
-	}
-}*/
