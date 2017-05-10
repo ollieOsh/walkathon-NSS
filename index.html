@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walk-A-Thon</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<input type="text" name="firstname" id="firstname" placeholder="First Name">
+			<input type="text" name="initial" id="initial" placeholder="MI">
+			<input type="text" name="lastname" id="lastname" placeholder="Last Name">
+		</fieldset>
+
+		<fieldset>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="horse@hole.com">
+		</fieldset>
+
+		<fieldset>
+			<label for="donaton">$</label>
+			<input type="number" name="donation" id="donation" placeholder="Donation Amount">
+		</fieldset>
+
+		<fieldset>
+			<input type="radio" name="donationType" id="lump">
+			<label for="lump">Lump Sum</label>
+
+			<input type="radio" name="donationType" id="per">
+			<label for="per">Per Lap</label>
+		</fieldset>
+
+		<button type="button" id="donate">Donate</button>
+		<button type="reset" id="reset">Clear</button>
+	</form>
+
+<script type="text/javascript" src="iffe-walkathon.js"></script>
+<script type="text/javascript" src="DOMevents.js"></script>
+</body>
+</html>
